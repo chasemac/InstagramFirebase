@@ -12,32 +12,14 @@ class UserProfilePhotoCell: UICollectionViewCell {
     
     var post: Post? {
         didSet {
-            print(post?.imageUrl ?? "")
             guard let imageUrl = post?.imageUrl else {return}
-            guard let url = URL(string: imageUrl) else {return}
-            
-            URLSession.shared.dataTask(with: url) { (data, response, err) in
-                // check for the error, then construct the image using data
-                if let err = err {
-                    print("failed to fetch profle image:", err)
-                    return
-                }
-                // perhaps check for repsonse status of 200 (HTTP OK)
-                
-                guard let data = data else {return}
-                
-                let image = UIImage(data: data)
-                
-                // need to get back on main UI thread
-                DispatchQueue.main.async {
-                    self.photoImageView.image = image
-                }
-                }.resume()
+            photoImageView.loadImage(urlString: imageUrl)
+
         }
     }
     
-    let photoImageView: UIImageView = {
-        let iv = UIImageView()
+    let photoImageView: CustomImageView = {
+        let iv = CustomImageView()
         iv.backgroundColor = .red
         iv.contentMode = .scaleAspectFill
         iv.clipsToBounds = true
