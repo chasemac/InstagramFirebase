@@ -27,8 +27,7 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
         collectionView?.register(UserProfilePhotoCell.self, forCellWithReuseIdentifier: cellId)
         
         setupLogOutButton()
-        
-//        fetchPosts()
+
         fetchOrderedPosts()
     }
     
@@ -41,37 +40,15 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
         //perhaps later on we'll implement some pagination of data
         ref.queryOrdered(byChild: "creationDate").observe(.childAdded, with: { (snapshot) in
             guard let dictionary = snapshot.value as? [String:Any] else {return}
-            let post = Post(dictionary: dictionary)
-            self.posts.append(post)
+            
+            guard let user = self.user else {return}
+            let post = Post(user: user, dictionary: dictionary)
+            self.posts.insert(post, at: 0)
+       //     self.posts.append(post)
             self.collectionView?.reloadData()
         }) { (err) in
             print("failed to fetch posts:", err)
         }
-    }
-    
-    fileprivate func fetchPosts() {
-        guard let uid = Auth.auth().currentUser?.uid else {return}
-        
-        let ref = Database.database().reference().child("posts").child(uid)
-        ref.observeSingleEvent(of: .value, with: { (snapshot) in
-          //  print(snapshot.value)
-            
-            guard let dictionaries = snapshot.value as? [String:Any] else {return}
-            
-            dictionaries.forEach({ (key, value) in
-          //      print("Key \(key), value: \(value)")
-                guard let dictionary = value as? [String:Any] else {return}
-                
-                let post = Post(dictionary: dictionary)
-                self.posts.append(post)
-            })
-            
-            self.collectionView?.reloadData()
-            
-        }) { (err) in
-            print("failed to fetch posts:", err)
-        }
-        
     }
     
     fileprivate func setupLogOutButton() {
@@ -160,12 +137,4 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
     }
 }
 
-struct User {
-    let username: String
-    let profileImageUrl: String
-    
-    init(dictionary: [String: Any]) {
-        self.username = dictionary["username"] as? String ?? ""
-        self.profileImageUrl = dictionary["profileImageUrl"] as? String ?? ""
-    }
-}
+

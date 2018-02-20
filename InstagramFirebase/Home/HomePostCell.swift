@@ -14,7 +14,26 @@ class HomePostCell: UICollectionViewCell {
         didSet {
             guard let postImageUrl = post?.imageUrl else {return}
             photoImageView.loadImage(urlString: postImageUrl)
+            
+            usernameLabel.text = post?.user.username
+            
+            guard let profileImageUrl = post?.user.profileImageUrl else {return}
+            userProfileImageView.loadImage(urlString: profileImageUrl)
+            
+     //       captionLabel.text = post?.caption
+            
+            setupAttributedCaption()
         }
+    }
+    
+    fileprivate func setupAttributedCaption() {
+        guard let post = self.post else {return}
+        let attrubutedText = NSMutableAttributedString(string: post.user.username, attributes: [NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 14)])
+        attrubutedText.append(NSMutableAttributedString(string: " \(post.caption)", attributes: [NSAttributedStringKey.font : UIFont.systemFont(ofSize: 14)]))
+        attrubutedText.append(NSMutableAttributedString(string: "\n\n", attributes: [NSAttributedStringKey.font : UIFont.systemFont(ofSize: 4)]))
+        attrubutedText.append(NSMutableAttributedString(string: "1 week ago", attributes: [NSAttributedStringKey.font : UIFont.systemFont(ofSize: 13), NSAttributedStringKey.foregroundColor : UIColor.gray]))
+        
+        self.captionLabel.attributedText = attrubutedText
     }
     
     let userProfileImageView: CustomImageView = {
@@ -47,7 +66,7 @@ class HomePostCell: UICollectionViewCell {
     }()
     
     let likeButton: UIButton = {
-       let button = UIButton()
+        let button = UIButton()
         button.setImage(#imageLiteral(resourceName: "like_unselected").withRenderingMode(.alwaysOriginal), for: .normal)
         return button
     }()
@@ -72,19 +91,15 @@ class HomePostCell: UICollectionViewCell {
     
     let captionLabel: UILabel = {
         let label = UILabel()
-        let attrubutedText = NSMutableAttributedString(string: "Username", attributes: [NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 14)])
-        attrubutedText.append(NSMutableAttributedString(string: " Some caption text that will perhaps wrap onto the next line asdfdasfsad", attributes: [NSAttributedStringKey.font : UIFont.systemFont(ofSize: 14)]))
-            attrubutedText.append(NSMutableAttributedString(string: "\n\n", attributes: [NSAttributedStringKey.font : UIFont.systemFont(ofSize: 4)]))
-        attrubutedText.append(NSMutableAttributedString(string: "1 week ago", attributes: [NSAttributedStringKey.font : UIFont.systemFont(ofSize: 13), NSAttributedStringKey.foregroundColor : UIColor.gray]))
-        
-        label.attributedText = attrubutedText
+
+
         label.numberOfLines = 0
         return label
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-            
+        
         addSubview(userProfileImageView)
         addSubview(usernameLabel)
         addSubview(optionsButton)

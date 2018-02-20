@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E0BD793203C928E005E23CE /* HomePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0BD792203C928E005E23CE /* HomePostCell.swift */; };
+		0E0BD795203CD2D4005E23CE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0BD794203CD2D4005E23CE /* User.swift */; };
 		0E1E3C2D2034BE1100ED148C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E3C2C2034BE1100ED148C /* MainTabBarController.swift */; };
 		0E1E3C2F2034BF0A00ED148C /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E3C2E2034BF0A00ED148C /* UserProfileController.swift */; };
 		0E36F7B92034EC3C00C8EF80 /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E36F7B82034EC3C00C8EF80 /* UserProfileHeader.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		0E0BD792203C928E005E23CE /* HomePostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostCell.swift; sourceTree = "<group>"; };
+		0E0BD794203CD2D4005E23CE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0E1E3C2C2034BE1100ED148C /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		0E1E3C2E2034BF0A00ED148C /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
 		0E36F7B82034EC3C00C8EF80 /* UserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				0E9956502037BB6500A6DD08 /* Post.swift */,
+				0E0BD794203CD2D4005E23CE /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				0E9956512037BB6500A6DD08 /* Post.swift in Sources */,
 				0ECB29712033D37400A9B9F1 /* Extensions.swift in Sources */,
 				0E9956532037BEF000A6DD08 /* UserProfilePhotoCell.swift in Sources */,
+				0E0BD795203CD2D4005E23CE /* User.swift in Sources */,
 				0E1E3C2D2034BE1100ED148C /* MainTabBarController.swift in Sources */,
 				0E36F7B92034EC3C00C8EF80 /* UserProfileHeader.swift in Sources */,
 				0E1E3C2F2034BF0A00ED148C /* UserProfileController.swift in Sources */,
