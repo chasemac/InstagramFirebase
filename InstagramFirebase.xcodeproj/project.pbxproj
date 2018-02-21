@@ -20,6 +20,7 @@
 		0E36F7C12036713500C8EF80 /* PhotoSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E36F7C02036713500C8EF80 /* PhotoSelectorCell.swift */; };
 		0E36F7C3203678A800C8EF80 /* PhotoSelectorHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E36F7C2203678A800C8EF80 /* PhotoSelectorHeader.swift */; };
 		0E7CA285203DEC9400E53730 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7CA284203DEC9400E53730 /* CameraController.swift */; };
+		0E7CA287203DFCA200E53730 /* PreviewPhotoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7CA286203DFCA200E53730 /* PreviewPhotoContainerView.swift */; };
 		0E99564E203767D300A6DD08 /* SharePhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99564D203767D300A6DD08 /* SharePhotoController.swift */; };
 		0E9956512037BB6500A6DD08 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9956502037BB6500A6DD08 /* Post.swift */; };
 		0E9956532037BEF000A6DD08 /* UserProfilePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9956522037BEF000A6DD08 /* UserProfilePhotoCell.swift */; };
@@ -49,6 +50,7 @@
 		0E36F7C02036713500C8EF80 /* PhotoSelectorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorCell.swift; sourceTree = "<group>"; };
 		0E36F7C2203678A800C8EF80 /* PhotoSelectorHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorHeader.swift; sourceTree = "<group>"; };
 		0E7CA284203DEC9400E53730 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		0E7CA286203DFCA200E53730 /* PreviewPhotoContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPhotoContainerView.swift; sourceTree = "<group>"; };
 		0E99564D203767D300A6DD08 /* SharePhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePhotoController.swift; sourceTree = "<group>"; };
 		0E9956502037BB6500A6DD08 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		0E9956522037BEF000A6DD08 /* UserProfilePhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilePhotoCell.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				0E7CA284203DEC9400E53730 /* CameraController.swift */,
+				0E7CA286203DFCA200E53730 /* PreviewPhotoContainerView.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				0E36F7B92034EC3C00C8EF80 /* UserProfileHeader.swift in Sources */,
 				0E1E3C2F2034BF0A00ED148C /* UserProfileController.swift in Sources */,
 				0ECB295E2033CAFF00A9B9F1 /* AppDelegate.swift in Sources */,
+				0E7CA287203DFCA200E53730 /* PreviewPhotoContainerView.swift in Sources */,
 				0E36F7BC203613BB00C8EF80 /* LoginController.swift in Sources */,
 				0E0BD793203C928E005E23CE /* HomePostCell.swift in Sources */,
 				0E36F7C3203678A800C8EF80 /* PhotoSelectorHeader.swift in Sources */,
