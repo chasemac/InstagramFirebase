@@ -12,7 +12,6 @@ import Firebase
 class UserProfileHeader: UICollectionViewCell {
     var user: User? {
         didSet {
-            
             guard let profileImageUrl = user?.profileImageUrl else {return}
             profileImageView.loadImage(urlString: profileImageUrl)
             usernameLabel.text = user?.username
@@ -33,15 +32,14 @@ class UserProfileHeader: UICollectionViewCell {
                 
                 if let isFollowing = snapshot.value as? Int, isFollowing == 1 {
                     self.editProfileFollowButton.setTitle("Unfollow", for: .normal)
-
+                    
                 } else {
                     self.setupFollowStyle()
                 }
                 
             }, withCancel: { (err) in
-                 print("failed to check if following" , err)
+                print("failed to check if following" , err)
             })
-            
         }
     }
     
@@ -52,7 +50,7 @@ class UserProfileHeader: UICollectionViewCell {
         guard let userId = user?.uid else {return}
         
         if editProfileFollowButton.titleLabel?.text == "Unfollow" {
-           //Unfollow
+            //Unfollow
             Database.database().reference().child("following").child(currentLoggedInUserId).child(userId).removeValue(completionBlock: { (err, ref) in
                 if let err = err {
                     print("failed to unfollow: ",err)
@@ -94,7 +92,7 @@ class UserProfileHeader: UICollectionViewCell {
     }()
     
     let gridButton: UIButton = {
-       let button = UIButton(type: .system)
+        let button = UIButton(type: .system)
         button.setImage(#imageLiteral(resourceName: "grid"), for: .normal)
         return button
     }()
@@ -159,7 +157,7 @@ class UserProfileHeader: UICollectionViewCell {
         button.layer.borderWidth = 1
         button.layer.cornerRadius = 3
         button.addTarget(self, action: #selector(handleEditProfileOrFollow), for: .touchUpInside)
-       return button
+        return button
     }()
     
     
@@ -208,7 +206,7 @@ class UserProfileHeader: UICollectionViewCell {
         
         bottomDividerView.anchor(top: stackView.bottomAnchor, left: leftAnchor, bottom: nil, right: rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0.5)
     }
-
+    
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
