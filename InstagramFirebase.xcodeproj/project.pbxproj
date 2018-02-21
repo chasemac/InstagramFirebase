@@ -19,6 +19,7 @@
 		0E36F7BF2036531C00C8EF80 /* PhotoSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E36F7BE2036531C00C8EF80 /* PhotoSelectorController.swift */; };
 		0E36F7C12036713500C8EF80 /* PhotoSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E36F7C02036713500C8EF80 /* PhotoSelectorCell.swift */; };
 		0E36F7C3203678A800C8EF80 /* PhotoSelectorHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E36F7C2203678A800C8EF80 /* PhotoSelectorHeader.swift */; };
+		0E7CA285203DEC9400E53730 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7CA284203DEC9400E53730 /* CameraController.swift */; };
 		0E99564E203767D300A6DD08 /* SharePhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99564D203767D300A6DD08 /* SharePhotoController.swift */; };
 		0E9956512037BB6500A6DD08 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9956502037BB6500A6DD08 /* Post.swift */; };
 		0E9956532037BEF000A6DD08 /* UserProfilePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9956522037BEF000A6DD08 /* UserProfilePhotoCell.swift */; };
@@ -47,6 +48,7 @@
 		0E36F7BE2036531C00C8EF80 /* PhotoSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorController.swift; sourceTree = "<group>"; };
 		0E36F7C02036713500C8EF80 /* PhotoSelectorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorCell.swift; sourceTree = "<group>"; };
 		0E36F7C2203678A800C8EF80 /* PhotoSelectorHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorHeader.swift; sourceTree = "<group>"; };
+		0E7CA284203DEC9400E53730 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		0E99564D203767D300A6DD08 /* SharePhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePhotoController.swift; sourceTree = "<group>"; };
 		0E9956502037BB6500A6DD08 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		0E9956522037BEF000A6DD08 /* UserProfilePhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilePhotoCell.swift; sourceTree = "<group>"; };
@@ -117,6 +119,14 @@
 			path = AddPhoto;
 			sourceTree = "<group>";
 		};
+		0E7CA283203DEC7800E53730 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				0E7CA284203DEC9400E53730 /* CameraController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
 		0E99564F2037BB5300A6DD08 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +166,7 @@
 		0ECB295C2033CAFF00A9B9F1 /* InstagramFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				0E7CA283203DEC7800E53730 /* Camera */,
 				0E0BD798203CDA66005E23CE /* Search */,
 				0E9956562037CC5700A6DD08 /* Home */,
 				0E99564F2037BB5300A6DD08 /* Models */,
@@ -346,6 +357,7 @@
 				0E9956512037BB6500A6DD08 /* Post.swift in Sources */,
 				0E0BD79A203CDA77005E23CE /* UserSearchController.swift in Sources */,
 				0ECB29712033D37400A9B9F1 /* Extensions.swift in Sources */,
+				0E7CA285203DEC9400E53730 /* CameraController.swift in Sources */,
 				0E9956532037BEF000A6DD08 /* UserProfilePhotoCell.swift in Sources */,
 				0E0BD795203CD2D4005E23CE /* User.swift in Sources */,
 				0E1E3C2D2034BE1100ED148C /* MainTabBarController.swift in Sources */,

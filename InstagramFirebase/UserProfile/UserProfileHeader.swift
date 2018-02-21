@@ -55,9 +55,7 @@ class UserProfileHeader: UICollectionViewCell {
                 if let err = err {
                     print("failed to unfollow: ",err)
                     return
-                }
-                
-                print("Succesffully unfollowed user:", self.user?.username)
+                }                
                 self.setupFollowStyle()
             })
         } else {
