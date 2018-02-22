@@ -24,6 +24,8 @@
 		0E7CA289203E06AE00E53730 /* CustomAnimationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7CA288203E06AE00E53730 /* CustomAnimationPresenter.swift */; };
 		0E7CA28B203E0CB300E53730 /* CustomAnimationDismisser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7CA28A203E0CB300E53730 /* CustomAnimationDismisser.swift */; };
 		0E7CA28D203E2A3300E53730 /* CommentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7CA28C203E2A3300E53730 /* CommentsController.swift */; };
+		0E7CA28F203E385000E53730 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7CA28E203E385000E53730 /* CommentCell.swift */; };
+		0E7CA291203E3D1B00E53730 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7CA290203E3D1B00E53730 /* Comment.swift */; };
 		0E99564E203767D300A6DD08 /* SharePhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99564D203767D300A6DD08 /* SharePhotoController.swift */; };
 		0E9956512037BB6500A6DD08 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9956502037BB6500A6DD08 /* Post.swift */; };
 		0E9956532037BEF000A6DD08 /* UserProfilePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9956522037BEF000A6DD08 /* UserProfilePhotoCell.swift */; };
@@ -57,6 +59,8 @@
 		0E7CA288203E06AE00E53730 /* CustomAnimationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimationPresenter.swift; sourceTree = "<group>"; };
 		0E7CA28A203E0CB300E53730 /* CustomAnimationDismisser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimationDismisser.swift; sourceTree = "<group>"; };
 		0E7CA28C203E2A3300E53730 /* CommentsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsController.swift; sourceTree = "<group>"; };
+		0E7CA28E203E385000E53730 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		0E7CA290203E3D1B00E53730 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		0E99564D203767D300A6DD08 /* SharePhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePhotoController.swift; sourceTree = "<group>"; };
 		0E9956502037BB6500A6DD08 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		0E9956522037BEF000A6DD08 /* UserProfilePhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilePhotoCell.swift; sourceTree = "<group>"; };
@@ -143,6 +147,7 @@
 			children = (
 				0E9956502037BB6500A6DD08 /* Post.swift */,
 				0E0BD794203CD2D4005E23CE /* User.swift */,
+				0E7CA290203E3D1B00E53730 /* Comment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 				0E9956572037CC6800A6DD08 /* HomeController.swift */,
 				0E0BD792203C928E005E23CE /* HomePostCell.swift */,
 				0E7CA28C203E2A3300E53730 /* CommentsController.swift */,
+				0E7CA28E203E385000E53730 /* CommentCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -373,6 +379,7 @@
 				0E7CA285203DEC9400E53730 /* CameraController.swift in Sources */,
 				0E9956532037BEF000A6DD08 /* UserProfilePhotoCell.swift in Sources */,
 				0E0BD795203CD2D4005E23CE /* User.swift in Sources */,
+				0E7CA28F203E385000E53730 /* CommentCell.swift in Sources */,
 				0E1E3C2D2034BE1100ED148C /* MainTabBarController.swift in Sources */,
 				0E36F7B92034EC3C00C8EF80 /* UserProfileHeader.swift in Sources */,
 				0E1E3C2F2034BF0A00ED148C /* UserProfileController.swift in Sources */,
@@ -384,6 +391,7 @@
 				0E36F7C3203678A800C8EF80 /* PhotoSelectorHeader.swift in Sources */,
 				0E7CA28D203E2A3300E53730 /* CommentsController.swift in Sources */,
 				0E36F7BF2036531C00C8EF80 /* PhotoSelectorController.swift in Sources */,
+				0E7CA291203E3D1B00E53730 /* Comment.swift in Sources */,
 				0E9956582037CC6800A6DD08 /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
