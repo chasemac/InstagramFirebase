@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E0ACBFF2040C6A700A77F63 /* CommentInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0ACBFE2040C6A700A77F63 /* CommentInputAccessoryView.swift */; };
 		0E0BD793203C928E005E23CE /* HomePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0BD792203C928E005E23CE /* HomePostCell.swift */; };
 		0E0BD795203CD2D4005E23CE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0BD794203CD2D4005E23CE /* User.swift */; };
 		0E0BD797203CD8CD005E23CE /* FirebaseUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0BD796203CD8CD005E23CE /* FirebaseUtils.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		0E016766203F4C130086931F /* InstagramFirebase.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InstagramFirebase.entitlements; sourceTree = "<group>"; };
+		0E0ACBFE2040C6A700A77F63 /* CommentInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInputAccessoryView.swift; sourceTree = "<group>"; };
 		0E0BD792203C928E005E23CE /* HomePostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostCell.swift; sourceTree = "<group>"; };
 		0E0BD794203CD2D4005E23CE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0E0BD796203CD8CD005E23CE /* FirebaseUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUtils.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				0E0BD792203C928E005E23CE /* HomePostCell.swift */,
 				0E7CA28C203E2A3300E53730 /* CommentsController.swift */,
 				0E7CA28E203E385000E53730 /* CommentCell.swift */,
+				0E0ACBFE2040C6A700A77F63 /* CommentInputAccessoryView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				0E7CA28B203E0CB300E53730 /* CustomAnimationDismisser.swift in Sources */,
 				0ECB295E2033CAFF00A9B9F1 /* AppDelegate.swift in Sources */,
 				0E7CA287203DFCA200E53730 /* PreviewPhotoContainerView.swift in Sources */,
+				0E0ACBFF2040C6A700A77F63 /* CommentInputAccessoryView.swift in Sources */,
 				0E36F7BC203613BB00C8EF80 /* LoginController.swift in Sources */,
 				0E0BD793203C928E005E23CE /* HomePostCell.swift in Sources */,
 				0E36F7C3203678A800C8EF80 /* PhotoSelectorHeader.swift in Sources */,
