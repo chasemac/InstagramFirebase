@@ -76,6 +76,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
             print(followerId)
             
             // I want to push the userprofilecontroller for followerID
+            let userProfileController = UserProfileController(collectionViewLayout: UICollectionViewFlowLayout())
+            userProfileController.userId = followerId
+            
+            //how do we access main UI from app delegate file
+            if let mainTabBarController = window?.rootViewController as? MainTabBarController {
+                
+                mainTabBarController.selectedIndex = 0
+                
+                mainTabBarController.presentedViewController?.dismiss(animated: true, completion: nil)
+                
+                if let homeNavigationController = mainTabBarController.viewControllers?.first as? UINavigationController {
+                    
+                    homeNavigationController.pushViewController(userProfileController, animated: true)
+                }
+            }
         }
     }
 
